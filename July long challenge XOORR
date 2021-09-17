@@ -1,0 +1,22 @@
+try:
+    for _ in range(int(input())):
+        n,k=map(int,input().split())
+        a=list(map(int,input().split()))
+        b=[0]*33
+        w=0
+        for i in range(n):
+            w=a[i]
+            j=32
+            while(w>0):
+                b[j]=b[j]+w%2
+                w=w//2
+                j=j-1
+        s=0
+        for i in range(33):
+            if (b[i]%k==0):
+                s=s+b[i]/k
+            else:
+                s=s+(b[i]//k)+1
+        print(int(s))
+except:
+    pass
