@@ -1,0 +1,12 @@
+try:
+    n=int(input())
+    l=[]
+    for i in range(n):
+        l.append(input())
+    for i in range(n):
+        if("party" in l[i]):
+            l[i]=l[i].replace("party","pawri")
+    for i in l:
+        print(i)
+except Exception as e:
+    pass# cook your dish here
