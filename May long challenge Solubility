@@ -1,0 +1,6 @@
+try:
+    for _ in range(int(input())):
+        l=list(map(int,input().split()))
+        print(10*(l[1]+(100-l[0])*l[2]))
+except:
+    pass
