@@ -1,0 +1,10 @@
+try:
+# cook your dish here
+    for _ in range(int(input())):
+        l=list(map(int,input().split()))
+        g=l[0]
+        c=l[1]
+        print((c*c)//(2*g))
+
+except:
+    pass
