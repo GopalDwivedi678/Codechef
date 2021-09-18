@@ -1,0 +1,15 @@
+try:
+    for _ in range(int(input())):
+        s=9.58
+        l=list(map(float,input().split()))
+        k=1
+        for i in l:
+            k=k*i
+        h=100/k
+        z=round(h,2)
+        if z<s:
+            print("YES")
+        else:
+            print("NO")
+except:
+    pass
