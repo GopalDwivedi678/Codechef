@@ -1,0 +1,22 @@
+try:
+        
+    for _ in range(int(input())):
+        l=list(map(int,input().split()))
+        s=input()
+        c=0
+        d=0
+        for i in s:
+            if i=="*":
+                c+=1
+                if c>d:
+                    d=c
+            else:
+                c=0
+        if d>=l[1]:
+            print("YES")
+        else:
+            print("NO")
+        
+    # cook your dish here
+except:
+    pass
