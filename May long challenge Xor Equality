@@ -1,0 +1,21 @@
+# cook your dish here
+try:
+    for _ in range(int(input())):
+        def fun(x,y,p):
+            r=1
+            x=x%p
+            if(x==0):
+                return 0
+            while(y>0):
+                if((y&1)==1):
+                    r=(r*x)%p
+                y=y>>1      
+                x=(x*x)%p
+            return r
+        n=int(input())
+        x=2
+        y=n-1
+        p=1000000007
+        print(fun(x,y,p))
+except:
+    pass
