@@ -1,0 +1,24 @@
+try:
+    a=[]
+    for i in range(6):
+        l=list(map(int,input().split()))
+        a.append(l)
+    if ((a[0][0]==1) or (a[5][5]==1)):
+        print("No")
+        exit()
+    k="Yes"
+    s=[]
+    i,j=0,0
+    while(i!=5 and j!=5):
+        if (a[i][j+1]==0):
+            s.append((i,j+1))
+        elif(a[i+1][j]==0):
+             s.append((i+1,j))
+        if(len(s)==0):
+            k="No"
+            break
+        m=s.pop()
+        i,j=m[0],m[1]
+    print(k)
+except:
+    pass
