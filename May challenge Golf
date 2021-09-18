@@ -1,0 +1,10 @@
+try:
+    for _ in range(int(input())):
+        n,x,k=map(int,input().split())
+        a=(n+1)%k
+        if x%k==0 or x%k==a:
+            print("Yes")
+        else:
+            print("No")
+except:
+    pass
