@@ -1,0 +1,10 @@
+try:
+    for _ in range(int(input())):
+        n=int(input())
+        a=list(map(int,input().split()))
+        if((sum(a)-max(a))<=max(a)):
+            print("No")
+        else:
+            print("Yes")
+except:
+    pass
