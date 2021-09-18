@@ -1,0 +1,24 @@
+import math
+try:
+    for _ in range(int(input())):
+        n=int(input())
+        l=list(map(int,input().split()))
+        s=sum(l)
+        z=0
+        if (s%2==0):
+            print(z)
+        else:
+            for i in l:
+                
+                if((i%2==0) and ((math.ceil(i/2)-1)<=0)):
+                    z=1
+                    break
+            if (z==0):
+                z=-1
+                print(z)
+            else:
+                print(z)
+except:
+    pass
+
+
